@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Admin page</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="/adduser"><span class="glyphicon glyphicon-plus">AddNewUser</span></a></li>
+      <li ><a href="/checkusers"><span class="glyphicon glyphicon-search">CheckUsers</a></li>
+      <li><a href="home.html"><span class="glyphicon glyphicon-pencil">EditUsers</span></a></li>
+
+     </ul> 
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="/loginpage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3 style="margin: 50px">Add New User</h3>
+  <form method="POST"action="/adding" style="margin: 50px">
+    <div>
+    username:<input type="TEXT" name="username" style="margin: 50px">
+    password:<input type="TEXT" name="password" style="margin: 50px">
+    </div> 
+  <input type="submit" value="SUBMIT" >
+  
+  </form>
+</div>
+
+</body>
+</html>
